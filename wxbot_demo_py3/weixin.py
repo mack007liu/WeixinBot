@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import qrcode
-from pyqrcode import QRCode
+from qrcode import QRCode
 import urllib.request, urllib.parse, urllib.error
 import urllib.request, urllib.error, urllib.parse
 import http.cookiejar
@@ -108,8 +108,8 @@ class WebWeixin(object):
         self.autoReplyMode = False
         self.syncHost = ''
         self.user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36'
-        self.interactive = False
-        self.autoOpen = False
+        self.interactive = True
+        self.autoOpen = True
         self.saveFolder = os.path.join(os.getcwd(), 'saved')
         self.saveSubFolders = {'webwxgeticon': 'icons', 'webwxgetheadimg': 'headimgs', 'webwxgetmsgimg': 'msgimgs',
                                'webwxgetvideo': 'videos', 'webwxgetvoice': 'voices', '_showQRCodeImg': 'qrcodes'}

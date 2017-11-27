@@ -2,9 +2,12 @@
 # coding: utf-8
 
 #===================================================
+import Mail as Mail
 import sendgrid
 from sendgrid.helpers.mail import *
 #===================================================
+from sendgrid.models import Email
+
 
 class SGMail(object):
 
